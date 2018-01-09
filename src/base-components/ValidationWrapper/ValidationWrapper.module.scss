@@ -1,0 +1,55 @@
+@import "../../shared.scss";
+
+.container {
+  height: 65px;
+  background-color: #ffffff;
+  border: solid 1px #faf3f3;
+  padding: 0 20px;
+}
+
+.innerContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container.hasValidationError {
+  border-color: $error-color;
+}
+
+.container.hasValidationError .placeholderAndInputContainer{
+  top: 2px;
+}
+
+.placeholderAndInputContainer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  top: 8px;
+  transition: .3s all;
+}
+
+.placeholder {
+  @include placeholder-text-light;
+  position: absolute;
+  top: 23px;
+  transition: .3s all;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.placeholder.pinnedToTop {
+  top: 0;
+}
+
+.input {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+.validationError {
+  @include input-error-text-light;
+  position: absolute;
+  bottom: 0;
+}

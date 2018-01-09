@@ -1,0 +1,51 @@
+@import "../../shared.scss";
+
+.tabs {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  @include nav-bar-text;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.item:last-of-type {
+  margin-right: 0;
+}
+
+.item.activeItem {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 3px;
+    background: $primary-color;
+    bottom: -2px;
+    left: 0;
+    transform: translateX(-10px);
+  }
+}
+
+.link {
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  min-width: 175px;
+}
+
+.dropdownLink {
+  @include input-text-light;
+  display: block;
+  padding: 10px;
+}
+
+@media all and(max-width: $breakpoint-1023) {
+  .item {
+    @include inline-text;
+  }
+}

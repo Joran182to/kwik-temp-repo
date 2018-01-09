@@ -1,0 +1,93 @@
+$primary-color: #06bce3;
+$error-color: #F44336;
+$dark-color: #172e43;
+
+$breakpoint-1023: 1023px;
+$breakpoint-767: 767px;
+$breakpoint-419: 419px;
+$breakpoint-599: 599px;
+
+@mixin heading-text-light {
+  color: #6e858d;
+  font: 300 30px 'Open Sans', sans-serif;
+}
+
+@mixin button-text-white {
+  font: 600 25px 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+@mixin button-text-dark {
+  font: 600 25px 'Open Sans', sans-serif;
+  color: #172E43;
+}
+
+@mixin placeholder-text-light {
+  font: 300 15px 'Open Sans', sans-serif;
+  color: #6e858d;
+}
+
+@mixin input-text-light {
+  font: 300 18px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin input-error-text-light {
+  font: 300 12px 'Open Sans', sans-serif;
+  color: $error-color;
+}
+
+@mixin nav-bar-text {
+  font: 20px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin footer-text {
+  font: 20px 'Quicksand', sans-serif;
+  color: $dark-color;
+}
+
+@mixin semi-bold-text-white {
+  font: 600 15px 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+@mixin semi-bold-text-grey {
+  font: 600 15px 'Open Sans', sans-serif;
+  color: #78919e;
+}
+
+@mixin card-title-text {
+  font: 18px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin paragraph-text-light {
+  font: 300 15px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin paragraph-small-text-light {
+  font: 300 10px 'Open Sans', sans-serif;
+  color: #172e43;
+}
+
+@mixin question-text-light {
+  font: 300 30px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin input-text-bold {
+  font: 600 20px 'Open Sans', sans-serif;
+  color: $dark-color;
+}
+
+@mixin price-label-text {
+  font: 300 25px 'Open Sans', sans-serif;
+  color: #172e43;
+}
+
+@mixin inline-text {
+  font: 300 12px 'Open Sans', sans-serif;
+  color: $dark-color;
+}

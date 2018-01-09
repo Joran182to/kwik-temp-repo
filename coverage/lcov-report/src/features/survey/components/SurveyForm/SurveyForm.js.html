@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/features/survey/components/SurveyForm/SurveyForm.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">src/features/survey/components/SurveyForm</a> SurveyForm.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+import {connect} f<span class="cstat-no" title="statement not covered" >rom 'react-redux';</span>
+import { reduxFor<span class="cstat-no" title="statement not covered" >m, formValueSelector }</span> from 'redux-form';
+import Button <span class="cstat-no" title="statement not covered" >from '../../../../base-components/Button/Button';<span class="cstat-no" title="statement not covered" ></span></span>
+import SurveyQuestion <span class="cstat-no" title="statement not covered" >from '../../components/SurveyQuestion/SurveyQuestion';<span class="cstat-no" title="statement not covered" ></span></span>
+import getVisibleQuestions <span class="cstat-no" title="statement not covered" >from '../../helpers/getVisibleQuestions';<span class="cstat-no" title="statement not covered" ></span></span>
+import isAnswer <span class="cstat-no" title="statement not covered" >from '../../helpers/isAnswer';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import styles from './Su<span class="cstat-no" title="statement not covered" >rveyForm.module.scss';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+class SurveyForm extends React.Component {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    handleFormSubmit = (val<span class="fstat-no" title="function not covered" >ue</span>s) =&gt; {
+        const { onSubmit, questions, questionsOrder } = this<span class="cstat-no" title="statement not covered" >.props;</span>
+&nbsp;
+        const requiredValues = {};<span class="cstat-no" title="statement not covered" ></span>
+        const visibleQuestions = getV<span class="cstat-no" title="statement not covered" >isibleQuestions(values, questions, questionsOrder);</span>
+        visi<span class="cstat-no" title="statement not covered" >bleQuestions.forEach(ques<span class="fstat-no" title="function not covered" >ti</span>onItem =&gt; {</span>
+            const questionName = ques<span class="cstat-no" title="statement not covered" >tionItem.question.id;</span>
+            requ<span class="cstat-no" title="statement not covered" >iredValues[questionName] = {textResponse: !questionItem.choices.length ? values[questionName] : null, choiceDefIds: questionItem.choices.length ? [{value: values[questionName]}] : []};</span>
+        });
+        retu<span class="cstat-no" title="statement not covered" >rn onSubmit(requiredValues);</span>
+    };
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const { error, submitting, invalid, handleSubmit, allValues, questions, questionsOrder } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+        const visibleQuestions = <span class="cstat-no" title="statement not covered" >getVisibleQuestions(allValues, questions, questionsOrder);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;form
+                className={styles.form}
+                onSubmit={handleSubmit(this.handleFormSubmit)}
+            &gt;
+&nbsp;
+                {visibleQuestions.map<span class="fstat-no" title="function not covered" >(q</span>uestionItem =&gt;<span class="cstat-no" title="statement not covered" > &lt;SurveyQuestion key={questionItem.question.id} questionItem={questionItem}/&gt;)}</span>
+&nbsp;
+                {error &amp;&amp; &lt;div className={styles.formError}&gt;{error}&lt;/div&gt;}
+&nbsp;
+                &lt;div className={styles.submitButtonContainer}&gt;
+                    &lt;Button
+                        className={styles.submitButton}
+                        disabled={submitting || invalid}
+                        type='submit'
+                    &gt;
+                        NEXT
+                    &lt;/Button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        )
+    }
+}
+&nbsp;
+const selector = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(f</span>orm, ...other) =&gt; <span class="cstat-no" title="statement not covered" >(formValueSelector(form))(...other);</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >SurveyForm =  reduxForm({</span>
+    validate: <span class="fstat-no" title="function not covered" >(v</span>alues, props) =&gt; {
+        const err = <span class="cstat-no" title="statement not covered" >{};</span>
+        const visibleQuestions = <span class="cstat-no" title="statement not covered" >getVisibleQuestions(values, props.questions, props.questionsOrder);</span>
+<span class="cstat-no" title="statement not covered" >        visibleQuestions.forEach(<span class="fstat-no" title="function not covered" >qu</span>estionItem =&gt; {</span>
+            const questionName = <span class="cstat-no" title="statement not covered" >questionItem.question.id;</span>
+<span class="cstat-no" title="statement not covered" >            if (!isAnswer(values[questionName])) {</span>
+<span class="cstat-no" title="statement not covered" >                err[questionName] = 'Required';</span>
+            }
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return err;</span>
+    }
+})(SurveyForm);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >SurveyForm = connect((state, initialPr<span class="fstat-no" title="function not covered" >op</span>s) =&gt; {</span>
+    const values = <span class="cstat-no" title="statement not covered" >{};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    initialProps.questions.forEach(<span class="fstat-no" title="function not covered" >it</span>em =&gt; <span class="cstat-no" title="statement not covered" >values[item.question.id] = selector(initialProps.form, state, item.question.id))</span>;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        allValues: values
+    }
+})(SurveyForm);<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+export default SurveyForm;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@import '../../../../shared.scss';
+
+.container {
+  @include question-text-light;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}

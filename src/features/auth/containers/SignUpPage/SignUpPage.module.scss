@@ -1,0 +1,19 @@
+@import '../../../../shared.scss';
+
+.container {
+  margin: 35px auto;
+  width: 400px;
+  padding: 20px 27px;
+}
+
+.title {
+  @include heading-text-light;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+@media all and (max-width: $breakpoint-419) {
+  .container {
+    width: calc(100% - 20px);
+  }
+}

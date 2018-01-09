@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/libs/awsLib.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/libs</a> awsLib.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">7.53% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>7/93</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">8.14% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/86</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import AWS from 'aws-sdk';
+&nbsp;
+import {
+  AuthenticationDetails,
+  CognitoUser,
+  CognitoUserAttribute,
+  CognitoUserPool,
+} from 'amazon-cognito-identity-js';
+&nbsp;
+import requestSigner from './requestSigner';
+&nbsp;
+const HEADER_AGENT_ID = 'x-spr-agent-id';
+const HEADER_CLIENT_ID = 'x-spr-client-id';
+const HEADER_GROUP_ID = 'x-spr-group-id';
+const HEADER_USER_ID = 'x-spr-user-id';
+const STORAGE_REMEMBER_ME = 'spr-remember-me';
+const STORAGE_USER_ATTRIBUTES = 'spr-user-attributes';
+const USER_ID_PREFIX = 'spr:user::';
+&nbsp;
+export async function <span class="fstat-no" title="function not covered" >callApi(</span>{
+  body,
+  headers = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span>
+  method = <span class="branch-0 cbranch-no" title="branch not covered" >'GET',</span>
+  path,
+  queryParams = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span>
+}) {
+<span class="cstat-no" title="statement not covered" >  if (!await isAuthenticated()) <span class="cstat-no" title="statement not covered" >throw new Error('User is not logged in.');</span></span>
+&nbsp;
+  // attach spraoi secific headers
+  const userAttributes = <span class="cstat-no" title="statement not covered" >getUserAttributes();</span>
+<span class="cstat-no" title="statement not covered" >  headers[HEADER_CLIENT_ID] = process.env.REACT_APP_SPR_CLIENT_ID;</span>
+<span class="cstat-no" title="statement not covered" >  headers[HEADER_USER_ID] = userAttributes.user_id;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (userAttributes.group_id) {</span>
+<span class="cstat-no" title="statement not covered" >    headers[HEADER_GROUP_ID] = userAttributes.group_id;</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (userAttributes.agent_id) {</span>
+<span class="cstat-no" title="statement not covered" >    headers[HEADER_AGENT_ID] = userAttributes.agent_id;</span>
+  }
+  
+  let testUrl = <span class="cstat-no" title="statement not covered" >window.location.hash.substring(1);</span>
+  let signedRequest = <span class="cstat-no" title="statement not covered" >requestSigner.newClient({</span>
+    accessKey: AWS.config.credentials.accessKeyId,
+    secretKey: AWS.config.credentials.secretAccessKey,
+    sessionToken: AWS.config.credentials.sessionToken,
+    region: process.env.REACT_APP_API_REGION,
+    endpoint: testUrl || process.env.REACT_APP_API_URL,
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (typeof signedRequest.signRequest === 'function') {</span>
+<span class="cstat-no" title="statement not covered" >    signedRequest = signedRequest.signRequest(</span>
+      { method, path, headers, queryParams, body });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    body = body ? JSON.stringify(body) : body;</span>
+<span class="cstat-no" title="statement not covered" >    headers = signedRequest.headers;</span>
+&nbsp;
+    const results = <span class="cstat-no" title="statement not covered" >await fetch(signedRequest.url, { method, headers, body });</span>
+<span class="cstat-no" title="statement not covered" >    if (!results.ok) <span class="cstat-no" title="statement not covered" >throw new Error(await results.text());</span></span>
+<span class="cstat-no" title="statement not covered" >    return results;</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    throw new Error('An unknown error occurred. Please refresh the page.')</span>
+  }
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >completeSignUp(</span>{
+  callbacks,
+  newAttributes,
+  newPassword,
+  oldAttributes,
+  user,
+}) {
+<span class="cstat-no" title="statement not covered" >  return user.completeNewPasswordChallenge(</span>
+    newPassword,
+    generateAttributeArray(newAttributes, oldAttributes),
+    callbacks
+  );
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >getNewUser(</span>email) {
+<span class="cstat-no" title="statement not covered" >  return new CognitoUser({ Username: email, Pool: getNewUserPool() });</span>
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >getUserAttributes(</span>) {
+<span class="cstat-no" title="statement not covered" >  return window[STORAGE_USER_ATTRIBUTES]</span>
+    || JSON.parse(localStorage.getItem(STORAGE_USER_ATTRIBUTES));
+}
+&nbsp;
+export async function <span class="fstat-no" title="function not covered" >isAuthenticated(</span>) {
+<span class="cstat-no" title="statement not covered" >  if (</span>
+    AWS.config.credentials &amp;&amp;
+    Date.now() &lt; AWS.config.credentials.expireTime - 60000
+  ) {
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  }
+&nbsp;
+  const currentUser = <span class="cstat-no" title="statement not covered" >getNewUserPool().getCurrentUser();</span>
+<span class="cstat-no" title="statement not covered" >  if (!currentUser) <span class="cstat-no" title="statement not covered" >return false;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (isRemembered()) {</span>
+    const userToken = <span class="cstat-no" title="statement not covered" >await getUserToken(currentUser);</span>
+<span class="cstat-no" title="statement not covered" >    await getAwsCredentials(userToken);</span>
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    signOut();</span>
+<span class="cstat-no" title="statement not covered" >    return false;</span>
+  }
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >isRemembered(</span>) {
+<span class="cstat-no" title="statement not covered" >  return localStorage.getItem(STORAGE_REMEMBER_ME) === 'true'</span>
+    || sessionStorage.getItem(STORAGE_REMEMBER_ME) === 'true';
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >rememberSession(</span>rememberMe) {
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem(STORAGE_REMEMBER_ME, rememberMe);</span>
+<span class="cstat-no" title="statement not covered" >  sessionStorage.setItem(STORAGE_REMEMBER_ME, true);</span>
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >resetPassword(</span>{ user, verificationCode, newPassword }) {
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    user.confirmPassword(verificationCode, newPassword, {</span>
+      onSuccess: <span class="fstat-no" title="function not covered" >da</span>ta =&gt; <span class="cstat-no" title="statement not covered" >resolve(data),</span>
+      onFailure: <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >reject(err),</span>
+    });
+  });
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >sendResetPasswordCode(</span>email) {
+  const user = <span class="cstat-no" title="statement not covered" >getNewUser(email);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    user.forgotPassword({</span>
+      onSuccess: <span class="fstat-no" title="function not covered" >da</span>ta =&gt; <span class="cstat-no" title="statement not covered" >resolve(user),</span>
+      onFailure: <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >reject(err),</span>
+    });
+  });
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >setUserAttributes(</span>attributes) {
+<span class="cstat-no" title="statement not covered" >  attributes.user_id = USER_ID_PREFIX + attributes.sub;</span>
+<span class="cstat-no" title="statement not covered" >  window[STORAGE_USER_ATTRIBUTES] = attributes;</span>
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem(STORAGE_USER_ATTRIBUTES, JSON.stringify(attributes));</span>
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >signIn(</span>{
+  email,
+  newPasswordRequired = <span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >()</span> =&gt; {},</span>
+  password,
+  rememberMe = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
+  user,
+}) {
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+    const callbacks = <span class="cstat-no" title="statement not covered" >{</span>
+      onSuccess: <span class="fstat-no" title="function not covered" >re</span>sult =&gt; {
+<span class="cstat-no" title="statement not covered" >        setUserAttributes(result.idToken.payload);</span>
+<span class="cstat-no" title="statement not covered" >        rememberSession(rememberMe);</span>
+<span class="cstat-no" title="statement not covered" >        resolve(result);</span>
+      },
+&nbsp;
+      onFailure: <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >reject(err),</span>
+    };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    callbacks.newPasswordRequired = <span class="fstat-no" title="function not covered" >(u</span>serAttributes, requiredAttributes) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >      newPasswordRequired(userAttributes, callbacks);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    user.authenticateUser(getAuthenticationDetails(email, password), callbacks);</span>
+  });
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >signOut(</span>) {
+  const currentUser = <span class="cstat-no" title="statement not covered" >getNewUserPool().getCurrentUser();</span>
+<span class="cstat-no" title="statement not covered" >  if (currentUser !== null) <span class="cstat-no" title="statement not covered" >currentUser.signOut();</span></span>
+<span class="cstat-no" title="statement not covered" >  if (AWS.config.credentials) <span class="cstat-no" title="statement not covered" >AWS.config.credentials.clearCachedId();</span></span>
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >signUp(</span>{ email, password, attributes = <span class="branch-0 cbranch-no" title="branch not covered" >{} </span>}) {
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >    getNewUserPool().signUp(</span>
+      email,
+      password,
+      generateAttributeArray(attributes),
+      null,
+<span class="fstat-no" title="function not covered" >      (e</span>rr, result) =&gt; <span class="cstat-no" title="statement not covered" >err ? reject(err) : resolve(result.user),</span>
+    ));
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >verifyEmail(</span>{ user, verificationCode }) {
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >    user.confirmRegistration(</span>
+      verificationCode,
+      true,
+<span class="fstat-no" title="function not covered" >      (e</span>rr, result) =&gt; <span class="cstat-no" title="statement not covered" >err ? reject(err) : resolve(result)</span>
+    ));
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >generateAttributeArray(</span>data, attributes = <span class="branch-0 cbranch-no" title="branch not covered" >[])</span> {
+<span class="cstat-no" title="statement not covered" >  data['custom:client_id'] = process.env.REACT_APP_SPR_CLIENT_ID;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  for (const key in data) {</span>
+<span class="cstat-no" title="statement not covered" >    attributes.push(new CognitoUserAttribute({ Name: key, Value: data[key] }));</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return attributes;</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >getAuthenticationDetails(</span>email, password) {
+  const authenticationData = <span class="cstat-no" title="statement not covered" >{ Username: email, Password: password };</span>
+<span class="cstat-no" title="statement not covered" >  return new AuthenticationDetails(authenticationData);</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >getAwsCredentials(</span>userToken) {
+  const authenticator = <span class="cstat-no" title="statement not covered" >`cognito-idp.${process.env.REACT_APP_COGNITO_REGION}.` +</span>
+    `amazonaws.com/${process.env.REACT_APP_COGNITO_USER_POOL_ID}`;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  AWS.config.update({ region: process.env.REACT_APP_COGNITO_REGION });</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  AWS.config.credentials = new AWS.CognitoIdentityCredentials({</span>
+    IdentityPoolId: process.env.REACT_APP_COGNITO_IDENTITY_POOL_ID,
+    Logins: { [authenticator]: userToken },
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >re</span>solve =&gt; <span class="cstat-no" title="statement not covered" >AWS.config.credentials.refresh(resolve))</span>;</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >getNewUserPool(</span>) {
+<span class="cstat-no" title="statement not covered" >  return new CognitoUserPool({</span>
+    UserPoolId: process.env.REACT_APP_COGNITO_USER_POOL_ID,
+    ClientId: process.env.REACT_APP_COGNITO_APP_CLIENT_ID,
+  });
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >getUserToken(</span>currentUser) {
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    currentUser.getSession(<span class="fstat-no" title="function not covered" >(e</span>rr, session) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (err) <span class="cstat-no" title="statement not covered" >reject(err);</span></span>
+      else <span class="cstat-no" title="statement not covered" >resolve(session.getIdToken().getJwtToken());</span>
+    });
+  });
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

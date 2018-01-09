@@ -1,0 +1,30 @@
+@import '../../../../shared.scss';
+
+.container {
+  max-width: 820px;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.card {
+  background-color: rgba(204, 218, 223, 0.1);
+  padding: 15px 0 30px 0;
+  overflow: auto;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 25px;
+}
+
+.title {
+  @include question-text-light;
+  margin: 60px 0 60px 22px;
+}
+
+.nameOfPlanHeadingCell, .premiumHeadingCell {
+  text-align: left;
+}
+
+.dateHeadingCell {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+@import '../../../../shared.scss';
+
+.form {
+  width: 1024px;
+  margin: auto;
+}
+
+.submitButtonContainer {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.submitButton {
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+}
+
+@media all and (max-width: $breakpoint-1023){
+  .form {
+    width: 768px;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: $breakpoint-767){
+  .form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

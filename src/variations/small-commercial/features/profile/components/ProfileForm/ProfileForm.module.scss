@@ -1,0 +1,35 @@
+@import "../../../.././../../shared";
+
+.form {
+  width: 1024px;
+  margin: 25px auto;
+}
+
+.submitButtonContainer {
+  margin-top: 85px;
+  text-align: center;
+}
+
+.zipCodeInput, .employeesNumberInput {
+  width: 100px;
+  margin: 0;
+}
+
+.businessTypeSelect, .businessLocationSelect {
+  width: 300px;
+  margin: 0;
+}
+
+@media all and (max-width: $breakpoint-1023) {
+  .form {
+    width: 768px;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

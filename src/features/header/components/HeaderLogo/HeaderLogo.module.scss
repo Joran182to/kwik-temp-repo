@@ -1,0 +1,8 @@
+@import "../../../../shared.scss";
+
+@media all and (max-width: $breakpoint-1023) {
+  .logoImg {
+    width: 100px;
+    height: auto;
+  }
+}

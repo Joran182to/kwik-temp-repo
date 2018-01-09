@@ -1,0 +1,123 @@
+@import "../../shared.scss";
+
+.select {
+  @include input-text-light;
+  width: 100%;
+  border: none;
+  padding: 0 0 15px 0;
+  height: 38px;
+  text-align: left;
+  background-color: #eff3f5;
+}
+
+.arrowIcon {
+  width: 17px;
+  height: auto;
+  transition: .3s all;
+}
+
+.arrowIconOpened {
+  transform: rotate(180deg);
+}
+
+.tag {
+  @include semi-bold-text-grey;
+  height: 25px;
+  background-color: #ffffff;
+  padding: 0 2px 0 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tagCloseButton {
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #eff3f5;
+  display: flex;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.tagCloseImg {
+  width: 8px;
+  height: 8px;
+  margin: auto;
+}
+
+.select :global {
+
+  .Select-control {
+    border: none!important;
+    height: 38px!important;
+    box-shadow: none!important;
+    background-color: #eff3f5!important;
+  }
+
+  .Select-placeholder, .Select-value, .Select-value-label, .Select-input {
+    padding: 0!important;
+    height: 38px!important;
+    line-height: 38px!important;
+    outline: none!important;
+    background-color: #eff3f5!important;
+    color: #545556;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+
+  .Select-multi-value-wrapper {
+    display: flex!important;
+    flex-wrap: wrap;
+  }
+
+  .Select-input {
+    display: block!important;
+    width: 100%;
+  }
+
+  .Select-option {
+    @include nav-bar-text;
+  }
+
+  .Select-option.is-focused, .Select-option.is-selected {
+    background-color: $primary-color;
+  }
+
+  .Select-value-label {
+    padding: 0 10px!important;
+  }
+
+  .Select-input > input {
+    width: 100%!important;
+    padding: 0 10px!important;
+  }
+
+  .Select-arrow-zone {
+    background-color: #eff3f5;
+    padding-right: 10px;
+  }
+
+  .Select-menu {
+    max-height: 100px;
+  }
+
+  .Select-menu-outer {
+    border: 1px solid #eff3f5;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+}
+
+:global {
+  .Select--multi.has-value {
+    height: auto!important;
+  }
+  .Select--multi.has-value .Select-multi-value-wrapper {
+    padding: 15px 10px!important;
+
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../../../../shared";
+
+.container {
+  width: 250px;
+  height: 300px;
+  padding: 10px 30px 10px 25px;
+}
+
+.imageAndCheckboxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image {
+  height: 70px;
+  width: auto;
+}
+
+.name {
+  @include nav-bar-text;
+  height: 54px;
+  margin-top: 20px;
+}
+
+.description {
+  @include paragraph-text-light;
+  margin-top: 5px;
+}

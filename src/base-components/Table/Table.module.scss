@@ -1,0 +1,24 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableBody {
+  background: #fff;
+}
+
+.headingCell {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  color: #172e43;
+  padding: 15px 0;
+}
+
+.tableRow {
+  border-top: 1px solid #dee2e5;
+}
+
+.tableCell {
+  padding: 15px 0;
+}

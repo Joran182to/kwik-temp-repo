@@ -1,0 +1,84 @@
+@import '../../../../shared.scss';
+
+.container {
+  width: 850px;
+  margin: auto;
+  padding: 60px 0 30px 0;
+}
+
+h2 {
+  margin: 0 0 32px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: justify;
+  color: $dark-color;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secureBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.secureInfo {
+  font-size: 15px;
+  font-weight: 300;
+  color: #6e858d;
+  font-weight: lighter;
+  margin-bottom: 2px;
+}
+.payPalIcon {
+  border-radius: 5px;
+  background-color: #009cde;
+  color: white;
+  padding: 13px 20px 11px;
+  font-family: Verdana;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.paymentWrapper {
+  display: flex;
+  align-items: flex-start;
+
+  .paymentForm {
+    flex: 4;
+    margin-right: 45px;
+    box-shadow: 0 20px 20px 0 rgba(251, 237, 237, 0.5);
+    padding: 25px 20px;
+  }
+
+  .paymentSummary {
+    flex: 3;
+    background-color: rgba(204, 218, 223, 0.1);
+    box-shadow: 0 10px 10px 0 #fbeded;
+  }
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .container {
+    width: 100%;
+  }
+  .paymentWrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+}
+@media all and (max-width: $breakpoint-419) {
+  .container {
+    padding-top: 35px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .paymentForm {
+    margin-right: 0 !important;
+    margin-top: 20px;
+  }
+
+}

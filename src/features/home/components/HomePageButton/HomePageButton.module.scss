@@ -1,0 +1,17 @@
+@import '../../../../shared.scss';
+
+.button {
+  @include semi-bold-text-grey;
+  background: rgba(157, 183, 193, 0.5);
+  height: 45px;
+  position: relative;
+  text-align: left;
+  padding: 0 0 0 70px;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  left: 27px;
+  width: 20px;
+}

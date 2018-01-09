@@ -1,0 +1,58 @@
+@import '../../../../shared.scss';
+
+
+.table {
+  min-width: 800px;
+  width: 100%;
+}
+
+.full-width {
+  min-width: 100%;
+}
+
+.quoteLogo {
+  width: 60px;
+  height: auto;
+  margin-left: 22px;
+  margin-right: 20px;
+}
+
+.quoteName {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  color: #172e43;
+  width: 195px;
+  white-space: pre-line;
+  padding-right: 10px;
+}
+
+.quotePrice {
+  width: 110px;
+}
+
+.quoteActionContainer {
+  width: 125px;
+  padding: 0 7px;
+}
+
+.quoteDescription {
+  @include paragraph-small-text-light;
+  margin-right: 20px;
+  text-align: left;
+  max-width: 180px;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 300;
+  color: #172e43;
+}
+
+.status {
+  width: 140px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: 600;
+  color: #06bce3;
+}

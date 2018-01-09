@@ -1,0 +1,13 @@
+export const GET_SURVEY_PAGE_REQUEST = 'GET_SURVEY_PAGE_REQUEST';
+export const GET_SURVEY_PAGE_SUCCESS = 'GET_SURVEY_PAGE_SUCCESS';
+export const SUBMIT_SURVEY_PAGE_REQUEST = 'SUBMIT_SURVEY_PAGE_REQUEST';
+export const SUBMIT_SURVEY_PAGE_SUCCESS = 'SUBMIT_SURVEY_PAGE_SUCCESS';
+export const CANCEL_SURVEY_REQUEST = 'CANCEL_SURVEY_REQUEST';
+
+export const questionTypes = {
+    TEXT: 'Text',
+    CHECKBOX: 'Checkbox',
+    RADIO: 'Radio',
+    DROPDOWN: 'Dropdown',
+    TAG: 'Tag',
+};

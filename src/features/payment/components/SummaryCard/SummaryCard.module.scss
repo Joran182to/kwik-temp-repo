@@ -1,0 +1,107 @@
+@import "../../../../shared.scss";
+
+.card {
+  padding: 17px 20px 17px 26px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #6e858d;
+    margin: 0 0 15px -14px;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    li {
+      background-color: white;
+      height: 56px;
+      margin: 0 -20px 0 -26px;
+      padding: 0 20px 0 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+
+      .number {
+        width: 25%;
+      }
+    }
+  }
+
+  .productName {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: #172e43;
+  }
+
+  img {
+    max-height: 40px;
+    margin-right: 24px;
+    max-width: 60px;
+  }
+}
+
+.fixed {
+  font-size: 10px;
+  position: relative;
+  right: 2px;
+  bottom: 6px;
+}
+
+.leftBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #172e43;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  h4 {
+    font-size: 25px;
+    color: #172e43;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.totalNumber {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: justify;
+  color: #172e43;
+}
+
+.summaryRow {
+  height: 54px;
+  padding: 0 21px 0 24px;
+  border-bottom: solid 1px #dee2e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -26px;
+  margin-right: -20px;
+
+  h4 {
+    font-size: 20px;
+    color: #172e43;
+    font-weight: normal;
+
+  }
+}

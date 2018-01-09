@@ -1,0 +1,45 @@
+@import "../../../../shared.scss";
+
+.row {
+  margin-bottom: 12px;
+}
+
+.counryCodeAndNumber {
+  display: flex;
+}
+
+.phoneType {
+  width: 432px;
+}
+
+.countryCode {
+  width: 135px;
+  margin-right: 13px;
+}
+
+.phoneNumber {
+  width: 368px;
+}
+
+.email {
+  width: 515px;
+}
+
+.submitButton {
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+}
+
+@media all and (max-width: $breakpoint-599) {
+  .phoneType, .countryCode, .phoneNumber, .email {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .countryCode {
+    margin-bottom: 12px;
+  }
+
+  .counryCodeAndNumber {
+    display: block;
+  }
+}

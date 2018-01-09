@@ -1,0 +1,21 @@
+@import '../../shared.scss';
+
+.container {
+  display: flex;
+}
+
+.mainNumber {
+  @include price-label-text;
+}
+
+.decimals, .monthlyTitle {
+  @include paragraph-text-light;
+}
+
+.decimals {
+  align-self: flex-start;
+}
+
+.monthlyTitle {
+  align-self: flex-end;
+}

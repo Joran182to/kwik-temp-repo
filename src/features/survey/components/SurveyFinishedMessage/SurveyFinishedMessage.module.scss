@@ -1,0 +1,36 @@
+@import '../../../../shared.scss';
+
+.container {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  @include question-text-light;
+  margin: 50px 0 100px 0;
+}
+
+.submitButton {
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+  margin-bottom: 20px;
+}
+
+.reviewQuestionsContainer {
+  @include nav-bar-text;
+  margin-bottom: 30px;
+}
+
+.reviewLink {
+  color: $primary-color;
+  cursor: pointer;
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../../shared.scss";
+
+.container {
+  max-width: 370px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+.newCardBtn {
+  background-color: white;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+  color: #172e43;
+  margin-top: 17px;
+  border-radius: 0;
+  padding: 17px 0 21px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCardIcon {
+  margin-right: 24px;
+  position: relative;
+  top: 3px;
+}

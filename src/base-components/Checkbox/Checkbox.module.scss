@@ -1,0 +1,22 @@
+@import "../../shared.scss";
+
+.checkbox {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #e2e0e0;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+}
+
+.checkbox.checked {
+  background: $primary-color;
+}
+
+.checkImg {
+  margin: auto;
+  width: 12px;
+  height: auto;
+}

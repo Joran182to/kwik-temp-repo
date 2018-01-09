@@ -1,0 +1,34 @@
+@import "../../../../shared.scss";
+
+.submitButton {
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+}
+
+.row {
+  margin-bottom: 12px;
+}
+
+.contactMessage {
+  @include placeholder-text-light;
+  width: 100%;
+  resize: none;
+  height: 320px;
+  padding: 15px 20px;
+  outline: none;
+  background: #fff;
+  border: solid 1px #faf3f3;
+}
+
+.description {
+  @include paragraph-text-light;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.link {
+  color: $primary-color;
+}
+
+.formMessage {
+  @include question-text-light;
+}

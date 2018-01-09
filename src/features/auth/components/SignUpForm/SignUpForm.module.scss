@@ -1,0 +1,61 @@
+@import "../../../../shared.scss";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+.formSwitcher {
+  margin: 15px 0 30px 0;
+}
+
+.formError {
+  width: 100%;
+  @include input-error-text-light;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.passwordVisibilityIconContainer {
+  padding: 10px;
+  background: none;
+  position: absolute;
+  right: 0;
+}
+
+.passwordVisibilityIcon {
+  width: 27px;
+  height: auto;
+}
+
+.passwordInput {
+  padding-right: 50px;
+}
+
+.fullWidthField {
+  width: 100%;
+}
+
+.halfWidthField {
+  width: 171px;
+}
+
+.passwordField {
+  margin-bottom: 13px;
+}
+
+.lastNameField, .firstNameField, .groupField {
+  margin-bottom: 25px;
+}
+
+@media all and (max-width: $breakpoint-419) {
+  .halfWidthField {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+}

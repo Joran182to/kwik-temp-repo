@@ -1,0 +1,92 @@
+@import "../../../../shared.scss";
+
+.input {
+  top: 10px;
+}
+.cardSelect {
+  width: 100%;
+  position: relative;
+  bottom: 1px;
+  background-color: #eff3f5;
+  padding: 0;
+  div {
+    background-color: #eff3f5 !important;
+  }
+}
+
+.paySecurelyMessage {
+  @include placeholder-text-light;
+  margin: 25px 0 7px 15px;
+}
+
+.payBtnContainer {
+  text-align: center;
+}
+
+.payBtn {
+  margin-top: 54px;
+}
+
+.addCardIcon {
+  margin-right: 24px;
+  position: relative;
+  top: 3px;
+}
+
+.newCardBtn {
+  background-color: #eff3f5;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+  color: #172e43;
+  margin-top: 17px;
+  border-radius: 0;
+  padding: 17px 0 21px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  img {
+    margin-bottom: 6px;
+    max-height: 13px;
+  }
+}
+
+.customValue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  > div {
+    border: none;
+  }
+}
+
+.valueCardBrandIcon {
+  margin-bottom: 0;
+  max-height: 13px;
+}
+
+.selectWrapper {
+  top: 4px;
+}
+
+.inputSelect :global {
+  .Select-control {
+    height: 40px!important;
+  }
+
+  .Select-placeholder, .Select-value, .Select-value-label, .Select-input {
+    height: 40px!important;
+    line-height: 40px!important;
+  }
+}

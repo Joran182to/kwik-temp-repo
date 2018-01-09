@@ -1,0 +1,11 @@
+@import '../../../../shared.scss';
+
+.textarea {
+  @include paragraph-text-light;
+  resize: none;
+  background-color: #eff3f5;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  height: 149px;
+}

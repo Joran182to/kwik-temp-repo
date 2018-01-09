@@ -1,0 +1,17 @@
+@import "shared.scss";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  width: 100%;
+  align-self: center;
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}

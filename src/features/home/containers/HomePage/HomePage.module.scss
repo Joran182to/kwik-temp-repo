@@ -1,0 +1,84 @@
+@import '../../../../shared.scss';
+
+.completeSurveyMessage {
+  margin-bottom: -140px;
+}
+
+.quotesAvailableMessage {
+  margin-bottom: -113px;
+}
+
+.cardsContainer {
+  width: 850px;
+  margin: auto;
+  padding: 220px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph {
+  margin-top: 9px;
+}
+
+.paragraph:first-of-type {
+  margin-top: 0;
+}
+
+.cardBuyIcon {
+  width: 35px;
+  margin-bottom: 1px;
+  position: relative;
+  right: 1px;
+}
+
+.cardServiceIcon {
+  width: 40px;
+  margin-bottom: 2px;
+}
+
+.cardClaimIcon {
+  width: 30px;
+  margin-bottom: 2px;
+}
+
+.buyNowButtonImg {
+  width: 25px;
+  bottom: 10px;
+}
+
+.editButtonImg {
+  width: 25px;
+  bottom: 12px;
+}
+
+.dashboardButtonImg {
+  width: 25px;
+  bottom: 13px;
+}
+
+.reportButtonImg {
+  width: 25px;
+  bottom: 8px;
+}
+
+.reviewButtonImg {
+  width: 21px;
+  bottom: 10px;
+}
+
+@media all and (max-width: $breakpoint-1023) {
+  .completeSurveyMessage, .quotesAvailableMessage {
+    margin-bottom: 0;
+  }
+
+  .cardsContainer {
+    padding-top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 90px;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../shared.scss";
+
+.button {
+  @include button-text-white;
+  padding: 11px 65px;
+  background: $primary-color;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button.disabled {
+  @include button-text-dark;
+  cursor: not-allowed;
+  background: #eaf0f2;
+}

@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/features/demographicForm/components/DemographicForm/DemographicForm.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">src/features/demographicForm/components/DemographicForm</a> DemographicForm.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75.76% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.08% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>19/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {connect} from 'react-redux';
+import { Field, reduxForm, formValueSelector } from 'redux-form';
+import * as constants from '../../constants';
+import Button from '../../../../base-components/Button/Button';
+import FormLine from '../../components/FormLine/FormLine';
+import FormInput from '../../components/FormInput/FormInput';
+import FormSelect from '../../../../base-components/Select/Select';
+&nbsp;
+import styles from './DemographicForm.module.scss';
+&nbsp;
+const martialOptions = [
+    {value: constants.martialStatuses.SINGLE, label: 'Single'},
+    {value: constants.martialStatuses.MARRIED, label: 'Married'}
+];
+&nbsp;
+const employmentOptions = [
+    {value: constants.employmentStatuses.EMPLOYED, label: 'Employed'},
+    {value: constants.employmentStatuses.UNEMPLOYED, label: 'Unemployed'}
+];
+&nbsp;
+const smokerOptions = [
+    {value: constants.smokerStatuses.SMOKER, label: 'Smoker'},
+    {value: constants.smokerStatuses.NON_SMOKER, label: 'Non-smoker'}
+];
+&nbsp;
+class DemographicForm extends React.Component {
+    handleFormSubmit = <span class="fstat-no" title="function not covered" >(v</span>alues) =&gt; {
+        const { onSubmit } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+        const {smokerStatus, smokerDuration, ...otherValues} = <span class="cstat-no" title="statement not covered" >values;</span>
+<span class="cstat-no" title="statement not covered" >        if (smokerStatus === constants.smokerStatuses.SMOKER) {</span>
+<span class="cstat-no" title="statement not covered" >            otherValues.isSmoker = true;</span>
+<span class="cstat-no" title="statement not covered" >            otherValues.smokerDuration = smokerDuration;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            otherValues.isSmoker = false;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return onSubmit(otherValues);</span>
+    };
+&nbsp;
+    render() {
+        const { error, submitting, invalid, handleSubmit, isSmoker } = this.props;
+&nbsp;
+        return (
+            &lt;form
+                className={styles.form}
+                onSubmit={handleSubmit(this.handleFormSubmit)}
+            &gt;
+                &lt;FormLine&gt;
+                    I am
+                    &lt;Field
+                        name='age'
+                        className={styles.ageInput}
+                        component={FormInput}
+                    /&gt;
+                    years old
+                &lt;/FormLine&gt;
+&nbsp;
+                &lt;FormLine&gt;
+                    My Zip code is
+                    &lt;Field
+                        name='zipCode'
+                        className={styles.zipCodeInput}
+                        component={FormInput}
+                    /&gt;
+                &lt;/FormLine&gt;
+&nbsp;
+                &lt;FormLine&gt;
+                    My current address is
+                    &lt;Field
+                        name='mailingAddress'
+                        className={styles.addressInput}
+                        component={FormInput}
+                    /&gt;
+                &lt;/FormLine&gt;
+&nbsp;
+                &lt;FormLine&gt;
+                    I am currently
+                    &lt;Field
+                        name='maritalStatus'
+                        className={styles.martialStatusSelect}
+                        component={FormSelect}
+                        options={martialOptions}
+                    /&gt;
+                    and
+                    &lt;Field
+                        name='employmentStatus'
+                        className={styles.employmentStatusSelect}
+                        component={FormSelect}
+                        options={employmentOptions}
+                    /&gt;
+                &lt;/FormLine&gt;
+&nbsp;
+                &lt;FormLine&gt;
+                    I am a
+                    &lt;Field
+                        name='smokerStatus'
+                        className={styles.smokerStatusSelect}
+                        component={FormSelect}
+                        options={smokerOptions}
+                    /&gt;
+                &lt;/FormLine&gt;
+&nbsp;
+                {
+                    isSmoker
+                        &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;FormLine&gt;</span>
+                            I have smoked for
+                            &lt;Field
+                                name='smokerDuration'
+                                className={styles.smokerDurationInput}
+                                component={FormInput}
+                            /&gt;
+                        &lt;/FormLine&gt;
+                }
+&nbsp;
+                {error &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;div className={styles.formError}&gt;{error}&lt;/div&gt;}</span>
+                &lt;Button
+                    className={styles.submitButton}
+                    disabled={submitting || invalid}
+                    type='submit'
+                &gt;
+                    NEXT
+                &lt;/Button&gt;
+            &lt;/form&gt;
+        )
+    }
+}
+&nbsp;
+DemographicForm =  reduxForm({
+    form: 'demographicForm',
+    validate: values =&gt; {
+        const errors = {};
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.age) errors.age = 'Required';
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.zipCode) errors.zipCode = 'Required';
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.mailingAddress) errors.mailingAddress = 'Required';
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.maritalStatus) errors.maritalStatus = 'Required';
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.employmentStatus) errors.employmentStatus = 'Required';
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (!values.smokerStatus) errors.age = 'Required';
+        <span class="missing-if-branch" title="if path not taken" >I</span>if ((values.smokerStatus === constants.smokerStatuses.SMOKER) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!values.smokerDuration)</span> <span class="cstat-no" title="statement not covered" >errors.smokerDuration = 'Required';</span>
+&nbsp;
+        return errors;
+    }
+})(DemographicForm);
+&nbsp;
+const selector = formValueSelector('demographicForm');
+&nbsp;
+DemographicForm = connect(state =&gt; {
+    const smokerStatus = selector(state, 'smokerStatus');
+    return {
+        isSmoker: smokerStatus === constants.smokerStatuses.SMOKER
+    };
+})(DemographicForm);
+&nbsp;
+export default DemographicForm;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@import '../../../../shared.scss';
+
+.footer {
+  @include footer-text;
+  letter-spacing: 2px;
+  height: 53px;
+  border-top: 1px solid #e0dbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerImg {
+  width: 82px;
+  height: 25px;
+  margin-left: 6px;
+  transform: translateY(2px);
+}

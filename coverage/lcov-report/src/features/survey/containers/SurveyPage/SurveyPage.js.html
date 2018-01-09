@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/features/survey/containers/SurveyPage/SurveyPage.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">src/features/survey/containers/SurveyPage</a> SurveyPage.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/22</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+import {connect} f<span class="cstat-no" title="statement not covered" >rom 'react-redux';</span>
+import {getSurv<span class="cstat-no" title="statement not covered" >eyPageRequest, submitSurv</span>eyPageRequest} from '../../actions';
+import ProgressMessage <span class="cstat-no" title="statement not covered" >from '../../components/ProgressMessage/ProgressMessage';<span class="cstat-no" title="statement not covered" ></span></span>
+import SurveyForm <span class="cstat-no" title="statement not covered" >from '../../components/SurveyForm/SurveyForm';<span class="cstat-no" title="statement not covered" ></span></span>
+import SurveyFinishedMessage <span class="cstat-no" title="statement not covered" >from '../../components/SurveyFinishedMessage/SurveyFinishedMessage';<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import styles from './Su<span class="cstat-no" title="statement not covered" >rveyPage.module.scss';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+class SurveyPage extends React.Component {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    componentWillMount() {
+        this.props.getSurveyPage();
+    }
+&nbsp;
+    handleSurveyFormSubmit = (val<span class="fstat-no" title="function not covered" >ue</span>s) =&gt; {
+        const {submitSurveyPage, history} = this.p<span class="cstat-no" title="statement not covered" >rops;</span>
+&nbsp;
+        retu<span class="cstat-no" title="statement not covered" >rn new Promise((res<span class="fstat-no" title="function not covered" >ol</span>ve, reject) =&gt; {</span>
+            subm<span class="cstat-no" title="statement not covered" >itSurveyPage({values, reject, history});</span>
+        });
+    };
+&nbsp;
+    handleFinishSurveyClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        this<span class="cstat-no" title="statement not covered" >.props.history.push('/quotes');</span>
+    };<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const {currentPage, totalPages, questions, questionsOrder, isFetching, isSurveyFinished} = th<span class="cstat-no" title="statement not covered" >is.props;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (isFetching) <span class="cstat-no" title="statement not covered" >return null;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;div className={styles.container}&gt;
+                &lt;ProgressMessage
+                    isSurveyFinished={isSurveyFinished}
+                    currentQuestion={currentPage}
+                    totalQuestions={totalPages} /&gt;
+                {
+                    isSurveyFinished
+                        ? &lt;SurveyFinishedMessage
+                            onRevie<span class="fstat-no" title="function not covered" >wC</span>lick=<span class="cstat-no" title="statement not covered" >{()</span> =&gt; ({})}
+                            onSubmitClick={this.handleFinishSurveyClick} /&gt;
+                        : &lt;SurveyForm
+                            onSubmit={this.handleSurveyFormSubmit}
+                            form={`survey-form-page-${currentPage}`}
+                            questions={questions}
+                            questionsOrder={questionsOrder}/&gt;
+                }
+            &lt;/div&gt;
+        )
+    }<span class="cstat-no" title="statement not covered" ></span>
+}
+&nbsp;
+export default connect(
+<span class="fstat-no" title="function not covered" ></span>    (state<span class="cstat-no" title="statement not covered" >) =&gt; ({</span>
+        currentPage: state.survey.currentPage,
+        totalPages: state.survey.totalPages,
+        questions: state.survey.questions,
+        questionsOrder: state.survey.questionsOrder,
+        isFetching: state.survey.isFetching,
+        isSurveyFinished: state.survey.isSurveyFinished
+    }),
+<span class="fstat-no" title="function not covered" ></span>    (dispatch<span class="cstat-no" title="statement not covered" >) =&gt; ({</span>
+        getSurveyPa<span class="fstat-no" title="function not covered" >ge</span>: ()<span class="cstat-no" title="statement not covered" > =&gt; dispatch(getSurveyPageRequest()),</span>
+        submitSurveyPa<span class="fstat-no" title="function not covered" >ge</span>: (payloa<span class="cstat-no" title="statement not covered" >d) =&gt; dispatch(submitSurveyPageRequest(payload))</span>
+    })
+)(SurveyPage)</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

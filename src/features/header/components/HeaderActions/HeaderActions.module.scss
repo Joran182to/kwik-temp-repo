@@ -1,0 +1,101 @@
+@import "../../../../shared.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.dropdownMenu {
+  min-width: 170px;
+}
+
+.logoutButton {
+  @include input-text-light;
+  padding: 10px;
+  background: none;
+}
+
+.signInLink {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  color: $dark-color;
+}
+
+.divider {
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 1px;
+  background: #979797;
+  align-self: stretch;
+}
+
+.cartButton, .notificationsButton, .helpButton {
+  padding: 0 10px;
+  background: none;
+  position: relative;
+}
+
+.cartImg {
+  width: 22px;
+  height: auto;
+}
+
+.notificationsImg {
+  width: 22px;
+  height: auto;
+}
+
+.helpImg {
+  width: 25px;
+  height: auto;
+}
+
+.cartNumber {
+  position: absolute;
+  top: -15px;
+  right: -4px;
+  display: inline-block;
+  border: 2px solid #07bde3;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+@media all and (max-width: $breakpoint-1023) {
+  .dropdownTitle {
+    font-size: 10px;
+  }
+
+  .divider {
+    margin-left: 13px;
+    margin-right: 0px;
+  }
+
+  .cartButton, .notificationsButton, .helpButton {
+    padding: 0 6px;
+    font: initial;
+    align-self: stretch;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .helpImg {
+    width: 15px;
+    height: auto;
+  }
+
+  .cartImg {
+    width: 14px;
+    height: auto;
+  }
+
+  .notificationsImg {
+    width: 14px;
+    height: auto;
+  }
+}

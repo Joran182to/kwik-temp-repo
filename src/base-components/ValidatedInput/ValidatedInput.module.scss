@@ -1,0 +1,8 @@
+@import '../../shared.scss';
+
+.input {
+  @include input-text-light;
+  width: 100%;
+  border: none;
+  outline: none;
+}

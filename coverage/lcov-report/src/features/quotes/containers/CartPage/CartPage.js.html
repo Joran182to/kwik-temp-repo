@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/features/quotes/containers/CartPage/CartPage.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">src/features/quotes/containers/CartPage</a> CartPage.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">10.53% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">8.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.76% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {connect} from 'react-redux';
+import {removeQuoteFromCartRequest} from '../../actions';
+import QuotesTable from '../../components/QuotesTable/QuotesTable';
+import Card from '../../../../base-components/Card/Card';
+import Button from '../../../../base-components/Button/Button';
+import CartButton from '../../components/CartButton/CartButton';
+import MonthlyPrice from '../../../../base-components/MonthlyPrice/MonthlyPrice';
+&nbsp;
+import styles from '../QuotesPage/QuotesPage.module.scss';
+&nbsp;
+class CartPage extends React.Component {
+    
+    getTableHeaderCells = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        return [</span>
+            '',
+            &lt;div className={styles.nameOfPlanHeadingCell}&gt;NAME OF PLAN&lt;/div&gt;,
+            &lt;div className={styles.premiumHeadingCell}&gt;DESCRIPTION&lt;/div&gt;,
+            &lt;div className={styles.premiumHeadingCell}&gt;PREMIUM&lt;/div&gt;,
+            ''
+        ]
+    };
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nderActionButton(productsLength, isCartEmpty, history) {
+        let button = <span class="cstat-no" title="statement not covered" >null;</span>
+<span class="cstat-no" title="statement not covered" >        if (productsLength) {</span>
+<span class="cstat-no" title="statement not covered" >            button = &lt;Button className={styles.checkoutButton} onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >history.push('purchase-plan')}</span>&gt;</span>
+                CHECKOUT
+            &lt;/Button&gt;
+        } else <span class="cstat-no" title="statement not covered" >if(!isCartEmpty) {</span>
+<span class="cstat-no" title="statement not covered" >            button = &lt;Button className={styles.checkoutButton} onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.history.push('/quotes')}</span>&gt;</span>
+                Go to quotes
+            &lt;/Button&gt;;
+        }
+<span class="cstat-no" title="statement not covered" >        return &lt;div className={styles.checkoutButtonContainer}&gt;</span>
+           {button}
+        &lt;/div&gt;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const { removeQuoteFromCart, isCartEmpty, history } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+        let subTotal = <span class="cstat-no" title="statement not covered" >0;</span>
+        const productsInCart = <span class="cstat-no" title="statement not covered" >this.props.cart.map(<span class="fstat-no" title="function not covered" >qu</span>ote =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            subTotal += quote.price;</span>
+<span class="cstat-no" title="statement not covered" >            return {</span>
+                name: quote.name,
+                description: quote.description,
+                imageUrl: quote.imageUrl,
+                price: quote.price,
+                action: &lt;CartButton
+                    isInCart={true}
+                    className={styles.cartRemoveButton}
+                    onRemoveFromCard={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >removeQuoteFromCart(quote.id)}</span>
+                /&gt;
+            }
+        });
+        
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;div className={styles.container}&gt;
+                &lt;div className={styles.title}&gt;Cart&lt;/div&gt;
+                &lt;Card className={styles.card}&gt;
+                    &lt;div className={productsInCart.length ? styles.tableContainer : styles.emptyCart}&gt;
+                        {productsInCart.length ? &lt;QuotesTable
+                            className={styles.cart}
+                            header={this.getTableHeaderCells()}
+                            quotes={productsInCart}
+                        /&gt; : 'Cart is empty'}
+                    &lt;/div&gt;
+                    {productsInCart.length ?
+                        &lt;div className={styles.subTotal}&gt;&lt;span&gt;SUB TOTAL&lt;/span&gt; &lt;MonthlyPrice price={subTotal} skipMonth={true}/&gt;&lt;/div&gt;
+                        : null}
+                &lt;/Card&gt;
+                {this.renderActionButton(productsInCart.length, isCartEmpty, history)}
+            &lt;/div&gt;
+        )
+    }
+}
+&nbsp;
+export default connect(
+    (state) =&gt; ({
+        cart: state.quotes.cart,
+        isCartEmpty: state.auth.userSession.cart &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!state.auth.userSession.cart.length</span>
+    }),
+    (dispatch) =&gt; ({
+        removeQuoteFromCart: <span class="fstat-no" title="function not covered" >(q</span>uoteId) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(removeQuoteFromCartRequest(quoteId))</span>
+    })
+)(CartPage)</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

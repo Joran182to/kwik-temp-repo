@@ -1,0 +1,28 @@
+@import '../../../../../../shared';
+
+.form {
+  margin-top: 25px;
+}
+
+.policyName {
+  @include input-text-light;
+  width: 527px;
+  height: 65px;
+  background-color: #ffffff;
+  border: solid 1px #faf3f3;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.claimDescriptionTextarea {
+  @include placeholder-text-light;
+  width: 527px;
+  height: 191px;
+  background-color: #ffffff;
+  border: solid 1px #faf3f3;
+  outline: none;
+  padding: 16px 21px;
+  resize: none;
+}

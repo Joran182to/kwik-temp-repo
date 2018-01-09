@@ -1,0 +1,76 @@
+{
+  "private": true,
+  "name": "kwikcover",
+  "appEnv": {
+    "apiGateway": {
+      "test": {
+        "url": "https://kc.api.spraoi.ai/v1/test",
+        "region": "us-east-1"
+      }
+    },
+    "cognito": {
+      "test": {
+        "appClientId": "5vs62ft6ldglrfmtmikop5elvk",
+        "identityPoolId": "us-east-1:200b6c3e-7325-4294-91cb-1339dad75bcc",
+        "region": "us-east-1",
+        "userPoolId": "us-east-1_YiKOk5gNO"
+      }
+    },
+    "clientIds": {
+      "test": {
+        "small-commercial": "spr:clt::719a241c-c35a-403d-90e1-7a744513c5df"
+      }
+    }
+  },
+  "deploy": {
+    "demo": {
+      "bucketUrl": "s3://aws-website-kcdemospraoiai-cde17",
+      "cacheControlMaxAge": 300,
+      "cloudFrontDistributionId": "E2DSJB0I98ERP3"
+    }
+  },
+  "scripts": {
+    "build": "ui-build",
+    "deploy:demo": "ui-deploy demo",
+    "start": "ui-watch",
+    "test": "tyu"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "dependencies": {
+    "braintree-web": "^3.27.0",
+    "card-validator": "^4.2.0",
+    "classnames": "^2.2.5",
+    "common-ui-aws": "git+https://Dima_Ulyanets@bitbucket.org/Dima_Ulyanets/common-ui-aws.git",
+    "crypto-js": "^3.1.9-1",
+    "moment": "^2.20.1",
+    "normalize.css": "^7.0.0",
+    "payment": "^2.3.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-datetime": "^2.11.1",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-select": "^1.0.0-rc.10",
+    "react-simple-dropdown": "^3.2.0",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.2",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-preset-react-app": "^3.1.0",
+    "common-ui-operations": "git+https://Dima_Ulyanets@bitbucket.org/Dima_Ulyanets/common-ui-operations.git",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "node-sass": "^4.7.2",
+    "redux-mock-store": "^1.4.0",
+    "redux-saga-testing": "^1.0.5",
+    "redux-test-utils": "^0.2.2",
+    "sass-loader": "^6.0.6",
+    "tyu": "^1.0.5"
+  }
+}

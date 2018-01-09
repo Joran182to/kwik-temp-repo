@@ -1,0 +1,36 @@
+@import "../../../../../../shared";
+
+.container {
+  margin-bottom: 30px;
+}
+
+.titleAndInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  @include heading-text-light;
+  width: 425px;
+  padding-right: 30px;
+}
+
+.description {
+  @include paragraph-text-light;
+  width: 300px;
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .titleAndInputContainer {
+    display: block;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .description {
+    margin-top: 5px;
+    width: 100%;
+  }
+}

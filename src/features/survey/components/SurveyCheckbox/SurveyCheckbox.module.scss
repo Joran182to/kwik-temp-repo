@@ -1,0 +1,63 @@
+@import '../../../../shared.scss';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.oneColumnChoices {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto!important;
+}
+
+.checkboxContainer {
+  @include semi-bold-text-grey;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 33.3%;
+  flex: 0 0 auto;
+  margin-bottom: 28px;
+  justify-content: center;
+}
+
+.fullWidthCheckboxContainer {
+  width: auto;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #eff3f5;
+  margin-right: 20px;
+  display: flex;
+
+}
+
+.checkImg {
+  width: 15px;
+  height: auto;
+  margin: auto;
+}
+
+.checkboxContainer.checked {
+  color: $primary-color;
+}
+
+.checkboxContainer.checked .checkbox{
+  background-color: $primary-color;
+}
+
+@media all and (max-width: $breakpoint-767){
+  .checkboxContainer {
+    width: 50%;
+  }
+
+  .fullWidthCheckboxContainer {
+    width: auto;
+  }
+}

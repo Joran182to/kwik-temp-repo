@@ -1,0 +1,61 @@
+@import '../../../../shared.scss';
+
+.row {
+  margin-bottom: 12px;
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cityAndState {
+  display: flex;
+}
+
+.firstName {
+  width: 200px;
+}
+
+.middleName {
+  width: 133px;
+}
+
+.lastName {
+  width: 200px;
+}
+
+.countries {
+  width: 346px;
+}
+
+.zipCode {
+  width: 205px;
+}
+
+.city {
+  width: 346px;
+  margin-right: 18px;
+}
+
+.state {
+  width: 113px;
+}
+
+.submitButton {
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+}
+
+@media all and (max-width: $breakpoint-599) {
+  .names, .cityAndState {
+    display: block;
+  }
+
+  .firstName, .middleName, .city {
+    margin-bottom: 12px;
+  }
+
+  .firstName, .middleName, .lastName, .countries, .zipCode, .city, .state {
+    width: 100%;
+  }
+}

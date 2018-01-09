@@ -1,0 +1,27 @@
+@import '../../shared';
+
+.container {
+  display: inline-block;
+  position: relative;
+}
+
+.input {
+  @include input-text-light;
+  width: 227px;
+  height: 65px;
+  background-color: #ffffff;
+  border: solid 1px #faf3f3;
+  outline: none;
+  padding: 0 50px 0 11px;
+}
+
+.calendarImg {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  pointer-events: none;
+}

@@ -1,0 +1,38 @@
+@import '../../../../shared.scss';
+
+.counter {
+  @include placeholder-text-light;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.link {
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.barsCointainer {
+  margin-top: 25px;
+  display: flex;
+}
+
+.bar {
+  background: #d8d8d8;
+  height: 10px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.bar:last-of-type {
+  margin-right: 0;
+}
+
+.bar.active {
+  background: $primary-color;
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .bar {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../../../shared.scss';
+
+.header {
+  height: 100px;
+  border-bottom: 1px solid #e0dbdb;
+  padding-top: 57px;
+}
+
+.inner {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  order: 1;
+}
+
+.tabs {
+  order: 2;
+}
+
+.actions {
+  order: 3;
+  transform: translateY(-5px);
+}
+
+@media all and (max-width: $breakpoint-1023) {
+  .header {
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 22px;
+  }
+  .logo {
+    align-self: center;
+  }
+  .inner {
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+  .tabs {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 11px;
+    margin-top: 10px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-10px);
+      width: calc(100% + 20px);
+      height: 1px;
+      background: #e0dbdb;
+    }
+  }
+  .actions {
+    order: 2;
+    transform: none;
+  }
+  .claimsDropdown :global {
+    .dropdown__content {
+      transform: translateY(10px) translateX(-100px);
+    }
+  }
+}

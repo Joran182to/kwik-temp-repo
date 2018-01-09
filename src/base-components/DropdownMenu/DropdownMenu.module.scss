@@ -1,0 +1,26 @@
+.arrow {
+  width: 10px;
+  height: auto;
+  margin-left: 15px;
+}
+
+:global {
+  .dropdown__trigger {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    color: #172e43;
+    cursor: pointer;
+  }
+  .dropdown__content {
+    z-index: 1;
+    border: 1px solid #e0dbdb;
+    background: #ffffff;
+    transform: translateY(10px);
+  }
+  .dropdown--active :local .arrow {
+    transform: rotate(180deg);
+  }
+}

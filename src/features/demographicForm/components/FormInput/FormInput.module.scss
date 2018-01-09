@@ -1,0 +1,9 @@
+@import '../../../../shared.scss';
+
+.input {
+  @include input-text-bold;
+  height: 38px;
+  background-color: #eff3f5;
+  margin: 0 20px;
+  padding: 0 10px;
+}

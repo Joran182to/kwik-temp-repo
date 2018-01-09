@@ -1,0 +1,31 @@
+@import '../../../../shared.scss';
+
+.container {
+  max-width: 600px;
+  margin: 0 auto 45px auto;
+}
+
+.title {
+  @include question-text-light;
+  margin: 45px 0;
+}
+
+.card {
+  background-color: #f9fbfb;
+}
+
+.cardInner {
+  padding: 17px;
+}
+
+.buttonContainer {
+  margin-top: 37px;
+  text-align: center;
+}
+
+@media all and (max-width: $breakpoint-599) {
+  .container {
+    padding: 0 10px;
+    width: 100%;
+  }
+}

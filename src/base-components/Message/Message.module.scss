@@ -1,0 +1,52 @@
+@import '../../shared.scss';
+
+.message {
+  background-color: #eff3f5;
+  padding: 20px 0;
+}
+
+.innerContainer {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  margin-left: auto;
+  background: none;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+.closeImg {
+  width: 40px;
+  height: auto;
+}
+
+.textsContainer {
+  flex: 1;
+}
+
+.title {
+  @include heading-text-light;
+  margin-bottom: 5px;
+}
+
+.description {
+  @include nav-bar-text;
+}
+
+@media all and (max-width: $breakpoint-1023) {
+  .innerContainer {
+    width: 768px;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: $breakpoint-767) {
+  .innerContainer {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

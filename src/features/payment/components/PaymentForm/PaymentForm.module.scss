@@ -1,0 +1,42 @@
+@import "../../../../shared.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  border-top: 1px solid #dee2e5;
+}
+
+.paymentField {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #dee2e5;
+}
+
+.cardIcon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.payBtn {
+  width: 228px;
+  padding: 11px 0;
+  margin-top: 53px;
+  margin-bottom: 68px;
+  box-shadow: 0 5px 5px 0 #e3dfdf;
+}
+
+.checkboxContainer {
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 28px;
+}
+
+.checkbox {
+  @include paragraph-text-light;
+  width: 100%;
+}

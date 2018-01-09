@@ -1,0 +1,23 @@
+@import "../../../../../../shared";
+
+.container {
+  width: 600px;
+  min-height: 610px;
+  margin: 45px auto 35px auto;
+  overflow: hidden;
+}
+
+.contentContainer {
+  padding: 0 37px;
+}
+
+.policyNotFoundText, .claimSentText {
+  @include input-text-bold;
+  margin-top: 70px;
+}
+
+.submitButtonContainer {
+  text-align: center;
+  margin-top: 95px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/features/home/containers/HomePage/HomePage.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">src/features/home/containers/HomePage</a> HomePage.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+import {connect} f<span class="cstat-no" title="statement not covered" >rom 'react-redux';</span>
+import HomePageCard <span class="cstat-no" title="statement not covered" >from '../../components/HomePageCard/HomePageCard';<span class="cstat-no" title="statement not covered" ></span></span>
+import ListItem <span class="cstat-no" title="statement not covered" >from '../../components/ListItem/ListItem';<span class="cstat-no" title="statement not covered" ></span></span>
+import cartI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/cart.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import serviceI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/service.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import claimI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/claim.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import alertI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/alert.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import dashboardI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/dashboard.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import reviewImg fr<span class="cstat-no" title="statement not covered" >om '../../../../assets/icons/review-claim.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import editI<span class="cstat-no" title="statement not covered" >mg from '../../../../assets/icons/edit.svg';<span class="cstat-no" title="statement not covered" ></span></span>
+import CompleteSurveyMessage <span class="cstat-no" title="statement not covered" >from '../../components/CompleteSurveyMessage/CompleteSurveyMessage';<span class="cstat-no" title="statement not covered" ></span></span>
+import QuotesAvailableMessage <span class="cstat-no" title="statement not covered" >from '../../components/QuotesAvailableMessage/QuotesAvailableMessage';<span class="cstat-no" title="statement not covered" ></span></span>
+import {userSessi<span class="cstat-no" title="statement not covered" >onPendingStates} from '../../../aut</span>h/constants';
+import {cancelS<span class="cstat-no" title="statement not covered" >urveyRequest} from '../../../survey</span>/actions';
+&nbsp;
+import styles from './<span class="cstat-no" title="statement not covered" >HomePage.module.scss';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+class HomePage extends React.Component {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor() {
+<span class="cstat-no" title="statement not covered" >        super();<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+        this.state = {
+            isCompleteSurveyMessageClosed: false,
+            isQuotesAvailableMessageClosed: false
+        };
+    }
+&nbsp;
+    handleCloseCompleteSurveyMessageClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        this<span class="cstat-no" title="statement not covered" >.setState({isCompleteSurveyMessageClosed: true});</span>
+    };<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+    handleCloseQuotesAvailableMessageClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        this<span class="cstat-no" title="statement not covered" >.setState({isQuotesAvailableMessageClosed: true});</span>
+    };<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+    handleCompleteSurveyClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        this<span class="cstat-no" title="statement not covered" >.props.history.push('/survey');</span>
+    };<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+    handleShowQuotesClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        this<span class="cstat-no" title="statement not covered" >.props.history.push('/quotes');</span>
+    };<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+    handleCancelSurveyClick = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
+        const {cancelSurvey, history} = this.p<span class="cstat-no" title="statement not covered" >rops;</span>
+&nbsp;
+        canc<span class="cstat-no" title="statement not covered" >elSurvey({history});</span>
+    };<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const {history, userName, showCompleteSurveyMessage, showQuotesAvailableMessage} = th<span class="cstat-no" title="statement not covered" >is.props;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;div className={styles.container}&gt;
+                {
+                    (showCompleteSurveyMessage &amp;&amp; !this.state.isCompleteSurveyMessageClosed)
+                        &amp;&amp; &lt;CompleteSurveyMessage
+                            className={styles.completeSurveyMessage}
+                            userName={userName}
+                            onClose={this.handleCloseCompleteSurveyMessageClick}
+                            onCompleteSurvey={this.handleCompleteSurveyClick}
+                            onCancelSurvey={this.handleCancelSurveyClick}
+                        /&gt;
+                }
+                {
+                    (showQuotesAvailableMessage &amp;&amp; !this.state.isQuotesAvailableMessageClosed)
+                        &amp;&amp; &lt;QuotesAvailableMessage
+                            className={styles.quotesAvailableMessage}
+                            userName={userName}
+                            onClose={this.handleCloseQuotesAvailableMessageClick}
+                            onShowQuotes={this.handleShowQuotesClick}
+                        /&gt;
+                }
+                &lt;div className={styles.cardsContainer}&gt;
+                    &lt;HomePageCard
+                        className={styles.card}
+                        icon={&lt;img alt='' src={cartImg} className={styles.cardBuyIcon}/&gt;}
+                        iconTitle='BUY'
+                        title='Buying an insurance is as simple as 1 2 3'
+                        body={&lt;div&gt;
+                            &lt;ListItem number={1} className={styles.paragraph}&gt;Tell us a little about yourself&lt;/ListItem&gt;
+                            &lt;ListItem number={2} className={styles.paragraph}&gt;Review coverage recommendations&lt;/ListItem&gt;
+                            &lt;ListItem number={3} className={styles.paragraph}&gt;Purchase what you want&lt;/ListItem&gt;
+                        &lt;/div&gt;}
+                        buttons={[
+                            {title: 'BUY NOW', iconUrl: cartImg, iconClassName: styles.buyNowButtonImg, onClick: () =&gt; history.push('/d<span class="fstat-no" title="function not covered" >em</span>ogra<span class="cstat-no" title="statement not covered" >phic-form')}</span>
+                        ]}
+                    /&gt;
+                    &lt;HomePageCard
+                        className={styles.card}
+                        icon={&lt;img alt='' src={serviceImg} className={styles.cardServiceIcon}/&gt;}
+                        iconTitle='SERVICE'
+                        title='Manage your insurance policy'
+                        body={&lt;div&gt;
+                            &lt;div className={styles.paragraph}&gt;Review your policy dashboard &lt;/div&gt;
+                            &lt;div className={styles.paragraph}&gt;Update your profile details like beneficiary, address, contact details&lt;/div&gt;
+                        &lt;/div&gt;}
+                        buttons={[
+                            {title: 'EDIT PROFILE', iconUrl: editImg, iconClassName: styles.editButtonImg, onClick: () =&gt; history.push('/p<span class="fstat-no" title="function not covered" >ro</span>file<span class="cstat-no" title="statement not covered" >/address')},</span>
+                            {title: 'DASHBOARD', iconUrl: dashboardImg, iconClassName: styles.dashboardButtonImg, onClick: () =&gt; ({})}<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+                        ]}
+                    /&gt;
+                    &lt;HomePageCard
+                        className={styles.card}
+                        icon={&lt;img alt='' src={claimImg} className={styles.cardClaimIcon}/&gt;}
+                        iconTitle='CLAIM'
+                        title='Manage your insurance claims'
+                        body={&lt;div&gt;
+                            &lt;div className={styles.paragraph}&gt;Report an claim and get speedy payment. &lt;/div&gt;
+                            &lt;div className={styles.paragraph}&gt;Review progress of your claim&lt;/div&gt;
+                        &lt;/div&gt;}
+                        buttons={[
+                            {title: 'REPORT A CLAIM', iconUrl: alertImg, iconClassName: styles.reportButtonImg, onClick: () =&gt; ({})},<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+                            {title: 'REVIEW CLAIM', iconUrl: reviewImg, iconClassName: styles.reviewButtonImg, onClick: () =&gt; ({})}<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+                        ]}
+                    /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        )
+    }<span class="cstat-no" title="statement not covered" ></span>
+}
+&nbsp;
+export default connect(
+<span class="fstat-no" title="function not covered" ></span>    (state<span class="cstat-no" title="statement not covered" >) =&gt; ({</span>
+        userName: state.auth.user.given_name,
+        showCompleteSurveyMessage: state.auth.userSession.pendingState === userSessionPendingStates.SURVEY,
+        showQuotesAvailableMessage: state.auth.userSession.pendingState === userSessionPendingStates.PRODUCT_SELECTION,
+    }),
+<span class="fstat-no" title="function not covered" ></span>    (dispatch<span class="cstat-no" title="statement not covered" >) =&gt; ({</span>
+        cancelSurv<span class="fstat-no" title="function not covered" >ey</span>: (payloa<span class="cstat-no" title="statement not covered" >d) =&gt; dispatch(cancelSurveyRequest(payload))</span>
+    })
+)(HomePage)</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 00:21:53 GMT+0200 (EET)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

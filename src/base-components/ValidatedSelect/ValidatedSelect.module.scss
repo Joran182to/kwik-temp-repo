@@ -1,0 +1,55 @@
+@import "../../shared.scss";
+
+.select {
+  @include input-text-light;
+  width: 100%;
+  border: none;
+  padding: 0 0 15px 0;
+  height: 34px;
+  text-align: left;
+}
+
+.arrowIcon {
+  width: 17px;
+  height: auto;
+  transition: .3s all;
+}
+
+.arrowIconOpened {
+  transform: rotate(180deg);
+}
+
+.select :global {
+  .Select-control {
+    border: none!important;
+    height: 24px!important;
+    box-shadow: none!important;
+  }
+
+  .Select-placeholder, .Select-value, .Select-value-label, .Select-input {
+    padding: 0!important;
+    height: 24px!important;
+    line-height: 24px!important;
+    outline: none!important;
+    color: #545556;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+
+  .Select-menu-outer {
+    z-index: 3;
+  }
+
+  .Select-input > input {
+    padding: 0!important;
+    width: 100%!important;
+  }
+
+  .Select-arrow-zone {
+    padding-right: 25px;
+  }
+
+  .Select-menu {
+    max-height: 100px;
+  }
+}
